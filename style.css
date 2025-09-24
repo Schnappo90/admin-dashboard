@@ -66,8 +66,10 @@ dd {
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
-ol[role='list'] {
+ol[role='list'],
+a {
     list-style: none;
+    text-decoration: none;
 }
 
 /* Set core body defaults */
@@ -146,7 +148,8 @@ svg {
     border: none;
     border-radius: var(--border-rad-btn);
     width: 100px;
-    padding: 0.75rem 1rem
+    padding: 0.75rem 1rem;
+    cursor: pointer;
 }
 
 
@@ -211,10 +214,12 @@ input {
     background: transparent;
     border: transparent;
     text-align: center;
+    cursor: pointer;
 }
 
 .avatar-container {
     display: flex;
+    cursor: pointer;
 }
 
 .avatar-container img {
@@ -469,9 +474,18 @@ li a {
 }
 
 @media (max-width: 900px) {
+
+    .header,
+    .header-actions {
+        padding-inline: 1rem;
+    }
     
     .header-actions {
-        padding-inline-end: 0;
+        padding-block-start: 0;
+    }
+
+    .welcome {
+        padding-block-start: 0;
     }
      
     .welcome-buttons {
