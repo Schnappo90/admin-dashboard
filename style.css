@@ -3,12 +3,14 @@
     /* Colours */
     --primary-clr: #1a92d3;
     --accent-clr: #f0b42a;
+    --btn-hover-clr: #1785c0;
     --grey: #e2e8f0;
     --grey-400: lightgray;
     --white: #ffffff;
     --text-primary: black;
     --text-secondary: grey;
     --text-muted-grey: lightgray;
+    --text-hover-grey:rgb(237, 237, 237);
 
     /* Typography */
     --fw-normal: 400;
@@ -150,6 +152,10 @@ svg {
     width: 100px;
     padding: 0.75rem 1rem;
     cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover-clr);
 }
 
 
@@ -323,6 +329,12 @@ li a {
     align-items: center;
     gap: 1rem;
 }
+
+.sidebar li:hover {
+    color: var(--text-hover-grey)
+}
+
+
 
 /*---------- main content -------- */
 
